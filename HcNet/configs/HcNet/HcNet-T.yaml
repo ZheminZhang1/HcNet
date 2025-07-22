@@ -1,0 +1,7 @@
+MODEL:
+  TYPE: HcNet
+  NAME: HcNet-T
+  DROP_PATH_RATE: 0.2
+  SWIN:
+    EMBED_DIM: [64, 128, 320, 512]
+    DEPTHS: [ 3, 8, 18, 3 ]
