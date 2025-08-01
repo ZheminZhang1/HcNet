@@ -18,3 +18,5 @@ Foundation models, such as CNNs and ViTs, have powered the development of image 
 
 ## Introduction
 This is an official implementation for "Efficient Visual Representation Learning with Heat Conduction Equation". This code is modified from [Swin Transformer](https://github.com/microsoft/Swin-Transformer). 
+
+## Main Results
