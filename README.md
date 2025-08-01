@@ -104,3 +104,16 @@ To train a `HcNet` on ImageNet from scratch, run:
 ```bash
 screen torchrun --nproc_per_node <num-of-gpus-to-use> --master_port 12345  main.py --cfg configs/HcNet/HcNet-T.yaml --batch-size <batch-size-per-gpu>
 ```
+
+## Citation
+```
+@misc{zhang2025efficientvisualrepresentationlearning,
+      title={Efficient Visual Representation Learning with Heat Conduction Equation}, 
+      author={Zhemin Zhang and Xun Gong},
+      year={2025},
+      eprint={2408.05901},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.05901}, 
+}
+```
