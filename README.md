@@ -67,3 +67,40 @@ conda install pytorch==2.0.0 torchvision==0.15.1 cudatoolkit=11.7 -c pytorch
 ```bash
 pip install timm==1.0.9
 ```
+
+### Data preparation
+
+We use standard ImageNet dataset, you can download it from http://image-net.org/. 
+
+- For standard folder dataset, move validation images to labeled sub-folders. The file structure should look like:
+  ```bash
+  $ tree data
+  imagenet
+  ├── train
+  │   ├── class1
+  │   │   ├── img1.jpeg
+  │   │   ├── img2.jpeg
+  │   │   └── ...
+  │   ├── class2
+  │   │   ├── img3.jpeg
+  │   │   └── ...
+  │   └── ...
+  └── val
+      ├── class1
+      │   ├── img4.jpeg
+      │   ├── img5.jpeg
+      │   └── ...
+      ├── class2
+      │   ├── img6.jpeg
+      │   └── ...
+      └── ...
+ 
+  ```
+
+### Training from scratch on ImageNet-1K
+
+To train a `HcNet` on ImageNet from scratch, run:
+
+```bash
+screen torchrun --nproc_per_node <num-of-gpus-to-use> --master_port 12345  main.py --cfg configs/HcNet/HcNet-T.yaml --batch-size <batch-size-per-gpu>
+```
