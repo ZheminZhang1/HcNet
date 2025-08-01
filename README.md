@@ -24,3 +24,26 @@ This is an official implementation for "Efficient Visual Representation Learning
 ### **Classification on ImageNet-1K with HcNet**
 
 ![teaser](figures/ImageNet.png)
+
+### **Object Detection on COCO with HcNet**
+
+![teaser](figures/COCO.png)
+
+* *Models in this subsection are initialized from the models trained in `classfication`.*
+
+### **Semantic Segmentation on ADE20K with HcNet**
+
+![teaser](figures/ADE20K.png)
+
+* *Models in this subsection are initialized from the models trained in `classfication`.*
+
+## Usage
+
+### Install
+
+- Clone this repo:
+
+```bash
+git clone https://github.com/microsoft/Swin-Transformer.git
+cd Swin-Transformer
+```
