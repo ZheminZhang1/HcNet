@@ -44,6 +44,26 @@ This is an official implementation for "Efficient Visual Representation Learning
 - Clone this repo:
 
 ```bash
-git clone https://github.com/microsoft/Swin-Transformer.git
-cd Swin-Transformer
+git clone https://github.com/ZheminZhang1/HcNet.git
+cd HcNet
+```
+
+- Create a conda virtual environment and activate it:
+
+```bash
+conda create -n HcNet python=3.10 -y
+conda activate HcNet
+```
+
+- Install `CUDA>=11.7` with `cudnn>=7` 
+- Install `PyTorch>=2.0.0` and `torchvision>=0.15.1` with `CUDA>=11.7`:
+
+```bash
+conda install pytorch==2.0.0 torchvision==0.15.1 cudatoolkit=11.7 -c pytorch
+```
+
+- Install `timm==1.0.9`:
+
+```bash
+pip install timm==1.0.9
 ```
